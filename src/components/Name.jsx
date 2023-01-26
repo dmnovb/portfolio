@@ -5,6 +5,7 @@ import { useRef, useEffect, useState } from "react"
 export default function Name () {
     const {ref: infoContainer, inView: myElementVisible} = useInView();
     
+
     console.log(myElementVisible)
     
     let info = 'info'
