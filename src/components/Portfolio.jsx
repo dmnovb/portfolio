@@ -4,13 +4,13 @@ import { useInView } from "react-intersection-observer"
 
 export default function Portfolio () {
     
-    // const {ref: projects, inView: projectsVisible} = useInView();
+    const {ref: projectsContainer, inView: myElementVisible} = useInView()
 
     return (
         <div className="container">
             <div>
             <h1 id="my-projects">Some of my projects</h1>
-            <div className="projects">
+            <div ref={projectsContainer} className="projects">
                 {projects.map(project => (
                     <PortfolioItem
                     imgUrl={project.imgUrl}

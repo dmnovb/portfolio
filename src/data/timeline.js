@@ -1,6 +1,7 @@
 export default [
     {
         year: 2017,
+        beginning: '- beginning',
         background: `Started coding for the first time in school.
         Initially I was interested in cybersecurity, however as we kept studying algorithms, 
         data structures and how the computer works I was much more interested in becoming a software developer grabbed me much more,
