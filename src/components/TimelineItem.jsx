@@ -4,7 +4,7 @@ export default function TimelineItem ({year, background, skills, beginning}) {
             <div className="timeline">
                 
                 <div id="beginning">
-                    <h1>{year}</h1>
+                    <h1>&#x2022; {year}</h1>
                     <h2>{beginning}</h2>                    
                 </div>
                 <p>{background}</p>
