@@ -9,7 +9,7 @@ export default function TimelineItem ({year, background, skills, beginning}) {
                 </div>
                 <p>{background}</p>
                 <p>Skills:</p>
-                <div className=" skills ">
+                <div className="skills ">
                 {skills.map((skill) => (
                     <p>{skill}</p>
                 ))}

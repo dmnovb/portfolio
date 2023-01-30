@@ -2,13 +2,17 @@ import PortfolioItem from "./PortfolioItem"
 import projects from "../data/projects"
 import shoppingcart from '../assets/mainres.png'
 import rickAndMortyApiImage from '../assets/mainres.png'
+import pongGame from '../assets/pong-game.png'
+import reactShop from '../assets/react-shop.png'
+import todoApp from '../assets/todo-app.png'
+import weatherApp from '../assets/weather-app.png'
 import { useInView } from "react-intersection-observer"
 
 
 export default function Portfolio () {
     
     const {ref: projectsContainer, inView: myElementVisible} = useInView({triggerOnce: true})
-    const images = [rickAndMortyApiImage]
+    const images = [rickAndMortyApiImage, reactShop, todoApp, weatherApp, pongGame]
 
     let projects_show = 'projects'
     let projects_hidden = 'projects_hidden';

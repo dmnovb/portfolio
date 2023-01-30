@@ -130,6 +130,7 @@ a:visited {
 .skills {
   display: flex;
   gap: 0.5rem;
+  text-decoration: underline;
 }
 
 .skills > p {
@@ -195,6 +196,8 @@ a:visited {
   transform: translateY(0);
 }
 
+
+
 .timeline {
   /* display: flex;
   flex-direction: column;
@@ -210,13 +213,25 @@ a:visited {
 
 @media (max-width: 500px) {
   ul {
-    /* display: flex;
+    display: flex;
     flex-direction: column;
     list-style: none;
-    font-size: 20px; */
+    font-size: 20px;
+  }
+  .logo {
+    margin-right: 3rem;
+  }
+  h1 {
+    text-align: center;
   }
 
-  h1 {
+  p {
+    font-size: 3vw;
+    word-break: break-all;
+  }
+
+  .info {
+    align-items: center;
     text-align: center;
   }
 
