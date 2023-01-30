@@ -1,14 +1,18 @@
 import {faGithub, faLinkedin} from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+// import icon from '../assets/svgexport-1.svg'
+// 
+
 
 console.log(faGithub)
 
-export default function PortfolioItem ({title,info, stack, link}) {
-    
+export default function PortfolioItem ({title,info, stack, link, imgUrl}) {
+    console.log(imgUrl)
     return (
         <div >
             <a href={link} target={link}>
                 <div className="project">
+                <img className="project-image" src={imgUrl} alt="" />
                 <h1>{title}</h1>
                 <p>{info}</p>
                 <div className="stack">

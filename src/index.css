@@ -77,18 +77,19 @@ a:visited {
   padding: 3rem;
   margin: 1rem;
   border-radius: 15px;
-  border: 4px solid #bbb;
-}
-
-.project-image {
-
-  height: 35px;
+  /* border: 4px solid #bbb; */
 }
 
 .project:hover {
   transition: all .2s;
   transform: translateY(-10px);
-  border: 4px solid #ffffff;
+  /* border: 4px solid #ffffff; */
+}
+
+.project-image {
+  width: 50%;
+  height: 50%;
+  border-radius: 15px;
 }
 
 #my-projects {
@@ -123,6 +124,8 @@ a:visited {
   text-underline-offset: 16px;
   text-decoration-thickness: 4px;
 }
+
+
 
 .skills {
   display: flex;
@@ -207,13 +210,17 @@ a:visited {
 
 @media (max-width: 500px) {
   ul {
-    display: flex;
+    /* display: flex;
     flex-direction: column;
     list-style: none;
-    font-size: 20px;
+    font-size: 20px; */
   }
 
-  .project {
+  h1 {
+    text-align: center;
+  }
+
+  .projects {
     display: grid;
     grid-template-columns: auto;
     place-content: center;

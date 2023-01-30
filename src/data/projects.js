@@ -1,6 +1,7 @@
 export default [
     {
         title: 'Rick and Morty API',
+        imgUrl: '../assets/svgexport-1.svg',
         link: 'https://github.com/dmnovb/the-rick-and-morty-api',
         info: 'Uses https://rickandmortyapi.com/ API to fetch data about the characters from the show. I have further improved it by creating a search bar and the ability to filter characters',
         stack: ['React.js', 'CSS']
