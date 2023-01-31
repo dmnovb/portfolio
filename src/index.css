@@ -6,6 +6,8 @@ body {
   font-family: 'Poppins';
   padding: 0;
   margin: 0;
+ 
+  overflow-x: hidden;  
 }
 
 section {
@@ -147,6 +149,18 @@ a:visited {
   background: #fff;
   color: #000;
 }
+.hamburger-icon {
+  width: 20px;
+  cursor: pointer;
+  height: 20px;
+  display: none;
+  filter: invert(100%) 
+  sepia(0%) 
+  saturate(1352%) 
+  hue-rotate(87deg) 
+  brightness(119%) 
+  contrast(119%);
+}
 
 .container {
   margin: 0 3rem 0 3rem;
@@ -223,33 +237,47 @@ a:visited {
   position: relative;
 }
 
-@media (max-width: 1660px) {
-  ul {
-    display: flex;
-    flex-direction: column;
-    list-style: none;
-    font-size: 20px;
-  }
-  .logo {
-    margin-right: 3rem;
-  }
-  h1 {
-    text-align: center;
-  }
-
-  p {
-    font-size: 1.2em;
-
-  }
-
-  .info {
-    align-items: center;
-    text-align: center;
-  }
+@media (max-width: 1350px) {
 
   .projects {
     display: grid;
     grid-template-columns: auto;
     place-content: center;
+  }
+
+  h1 {
+    text-align: center;
+  }
+
+}
+
+@media (max-width: 30rem) {
+  /* ul {
+    position: fixed;
+    padding: 0rem 2rem;
+    flex-direction: column;
+    inset: 0 0 0 26%;
+    text-align: right;
+    background: hsl(0, 0%, 100% , 0.1);
+    backdrop-filter: blur(1rem);
+  } */
+
+  .links {
+    position: relative;
+    flex-direction: column;
+    padding: 0rem 2rem;
+    inset: 0 0 0 26%;
+    text-align: right;
+    /* background: hsl(0, 0%, 100% , 0.1); */
+  }
+  
+  p {
+    font-size: 1.2em;
+    padding: 2rem;
+  }
+
+  .info {
+    align-items: center;
+    text-align: center;
   }
 }
