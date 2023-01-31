@@ -10,7 +10,7 @@ export default function Name () {
 
     return (
         <div className="container">   
-            <section ref={infoContainer} className={myElementVisible ? info : info_hidden} >
+            <section id="name-info" ref={infoContainer} className={myElementVisible ? info : info_hidden} >
                 <h1>I'm Boyan Damyanov.</h1>
                 <h2>Web Developer.</h2>
                 <h3>Currently based in Sofia.</h3>

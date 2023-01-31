@@ -1,12 +1,22 @@
 :root 
 
+* {
+  scroll-behavior: smooth;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding: 5rem;
+  
+}
+
 body {
   background-color: #131316;
   color: #ffffff;
   font-family: 'Poppins';
   padding: 0;
   margin: 0;
- 
+  
   overflow-x: hidden;  
 }
 
@@ -216,7 +226,7 @@ a:visited {
 .timeline-hidden {
   opacity: 0;
   filter: blur(5px);
-  transform: translateX(100%);
+  transform: translateX(-100%);
   transition: all 1s;
 }
 
@@ -244,6 +254,8 @@ a:visited {
     grid-template-columns: auto;
     place-content: center;
   }
+
+
 
   h1 {
     text-align: center;
