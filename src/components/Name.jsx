@@ -1,6 +1,5 @@
 // import {avatar} from '../assets/avatar.png'
 import { useInView } from "react-intersection-observer"
-import { useRef, useEffect, useState } from "react"
 
 export default function Name () {
 
@@ -15,7 +14,7 @@ export default function Name () {
                 <h1>I'm Boyan Damyanov.</h1>
                 <h2>Web Developer.</h2>
                 <h3>Currently based in Sofia.</h3>
-                {/* <h4>{myElementVisible ? 'yes' : 'no'}</h4> */}
+
             </section>
         </div>
     )

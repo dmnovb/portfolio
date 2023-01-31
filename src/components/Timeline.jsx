@@ -4,10 +4,14 @@ import { useInView } from "react-intersection-observer"
 
 
 export default function Timeline () {
+    const {ref: timelineContainer, inView: myElementVisible} = useInView({triggerOnce: true})
+    
+    const visible = 'timeline'
+    const hidden = 'timeline-hidden'
     
     return (
         <div>
-            <div className="container">
+            <div ref={timelineContainer} className={myElementVisible ? visible : hidden}>
                 <p id="timeline-name">Timeline</p>
                 {timeline.map(a => (
                     <TimelineItem

@@ -4,6 +4,7 @@ export default [
         imgUrl: '../assets/svgexport-1.svg',
         link: 'https://github.com/dmnovb/the-rick-and-morty-api',
         info: 'Uses https://rickandmortyapi.com/ API to fetch data about the characters from the show. I have further improved it by creating a search bar and the ability to filter characters',
+        deployed: 'https://vercel.com/dmnovb/the-rick-and-morty-api-uoiv',
         stack: ['React.js', 'CSS']
     },
     {
@@ -31,9 +32,9 @@ export default [
         stack: ['Javascript', 'HTML', 'CSS']
     },
     {
-        title: 'WoW Character API',
-        link: 'https://github.com/dmnovb/wow-character-api',
-        info: 'An app made for myself that uses the API that the company Blizzard provides to fetch data about my own character in the game.',
-        stack: ['Laravel', 'Blade', 'CSS']
+        title: 'Brunchy',
+        link: 'https://github.com/dmnovb/brunchy',
+        info: 'Brunchy is a web app made in Reactjs as a task for an interview. You can add items to cart and checkout.',
+        stack: ['React.js', 'CSS']
     }
 ]
