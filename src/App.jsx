@@ -2,6 +2,7 @@ import Header from './components/Header'
 import Name from './components/Name'
 import Timeline from './components/Timeline'
 import Portfolio from './components/Portfolio'
+import Footer from './components/Footer'
 
 function App() {
 
@@ -11,6 +12,7 @@ function App() {
       <Name/>
       <Portfolio/>
       <Timeline/>
+      <Footer/>
     </div>
   )
 }
