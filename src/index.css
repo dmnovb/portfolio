@@ -232,19 +232,34 @@ a:visited {
 
 
 .timeline {
-  /* display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center; */
   opacity: 1;
   filter: blur(0);
   transition: all 1s;
   transform: translateX(0);
-  width: 80%;
-  height: auto;
-  max-width: 800px;
-  margin: 0 auto;
-  position: relative;
+  
+   width: 80%; 
+  height: auto; 
+   max-width: 800px; 
+   margin: 0 auto; 
+   position: relative; 
+}
+
+.social-links {
+  margin-right: 3rem;
+  display: flex;
+  justify-content: center;
+  padding-top: 1rem;
+
+}
+
+.copyright {
+  display: flex;
+  justify-content: center;
+}
+
+#copyright {
+  font-size: .8rem;
+  font-weight: 400;
 }
 
 @media (max-width: 1350px) {
@@ -264,23 +279,12 @@ a:visited {
 }
 
 @media (max-width: 30rem) {
-  /* ul {
-    position: fixed;
-    padding: 0rem 2rem;
-    flex-direction: column;
-    inset: 0 0 0 26%;
-    text-align: right;
-    background: hsl(0, 0%, 100% , 0.1);
-    backdrop-filter: blur(1rem);
-  } */
-
   .links {
     position: relative;
     flex-direction: column;
     padding: 0rem 2rem;
     inset: 0 0 0 26%;
     text-align: right;
-    /* background: hsl(0, 0%, 100% , 0.1); */
   }
   
   p {
@@ -291,5 +295,13 @@ a:visited {
   .info {
     align-items: center;
     text-align: center;
+  }
+
+  .social-links {
+    margin-right: 4rem;
+  }
+
+  .copyright {
+    margin-left: 1rem;
   }
 }
